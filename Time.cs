@@ -23,7 +23,7 @@ namespace Chuong2Bai1
 
             set
             {
-                if (value > 0 && value < 59)
+                if (value > 0 && value < 24)
                 {
                     this.hour = value;
                 }
@@ -82,7 +82,7 @@ namespace Chuong2Bai1
         }
         public Time(int hour, int minute, int second)
         {
-            if (hour >= 0 && hour <= 59)
+            if (hour >= 0 && hour <= 24)
             {
                 this.hour = hour;
             }
@@ -106,6 +106,9 @@ namespace Chuong2Bai1
             {
                 throw new Exception("No input validation needed");
             }
+            this.second = second;
+            this.minute = minute;
+            this.hour = hour;
         }
         public void setTime(Time t)
         {

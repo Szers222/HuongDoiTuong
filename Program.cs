@@ -12,7 +12,7 @@ namespace Chuong2Bai1
         {
             Console.Write("Nhap so giay muon them vao: ");
             int nhap = Nhap();
-            Time thoiGian= new Time(24,0,0);
+            Time thoiGian= new Time(0,0,0);
             thoiGian.nextSecond();
             Console.WriteLine("So gio chuan: ");
             Console.WriteLine(thoiGian.toString());
@@ -24,8 +24,6 @@ namespace Chuong2Bai1
             Console.WriteLine(thoiGian.previousSecond().toString());
             Console.WriteLine("So gio them giay bat ky");
             Console.WriteLine(thoiGian.previousSecond1(nhap).toString());
-
-
         }
         public static int Nhap()
         {
